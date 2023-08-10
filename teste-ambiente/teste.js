@@ -1,4 +1,4 @@
-console.log("Hello, World!")
+console.log("Hello, World")
 
 n1 = 1
 n2 = 2
