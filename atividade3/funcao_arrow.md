@@ -39,3 +39,5 @@ const soma = (a,b) => a+b
 console.log(soma(2,8));
 
 SAÍDA: 10
+
+### FONTE: https://diegomariano.com/arrow-functions/#:~:text=O%20que%20%C3%A9%20arrow%20function,fun%C3%A7%C3%B5es%20de%20forma%20mais%20condensada. <h3>
