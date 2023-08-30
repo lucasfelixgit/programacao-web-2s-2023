@@ -28,7 +28,7 @@ No exemplo anterior, a função armazenada em "x" se assemelha ao código do exe
 
 y = n => n+1
 
-ENTRADA -> y(100) \
+ENTRADA -> y(100) 
 
 SAÍDA <- 101
 
