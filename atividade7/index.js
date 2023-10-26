@@ -13,7 +13,6 @@ app.get('/', (req, res) => {
 });
 
 app.post('/dados', (req, res) => {
-
     const nome = req.body.nome;
     const cpf = req.body.cpf;
     const nasc = req.body.nasc;
@@ -28,6 +27,7 @@ app.post('/dados', (req, res) => {
     const alergia = req.body.alergia;
     const info = req.body.info;
 
+    
     res.render('dados', {
         nome,
         cpf,
@@ -44,6 +44,19 @@ app.post('/dados', (req, res) => {
         info
     });
 });
+
+    function validarFormulario() {
+        var campos = document.querySelectorAll("input[required], textarea[required]");
+        for (var i = 0; i < campos.length; i++) {
+            if (campos[i].value.trim() === "") {
+                alert("Por favor, preencha o campo " + campos[i].getAttribute("placeholder") + ".");
+                campos[i].focus();
+            return false; 
+        }
+    }
+  
+    return true; 
+}
 
 const PORT = 8080;
 app.listen(PORT, () => {
